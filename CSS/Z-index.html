@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .a
+        {
+            left: 50px;
+            height: 260px;
+            width: 400px;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .b
+        {
+            top: 200px;
+            left: 440px;
+            height: 260px;
+            width: 400px;
+            z-index: 2;
+            position: absolute;
+        }
+
+        .c
+        {
+            left: 830px;
+            top: 360px;
+            height: 250px;
+            width: 400px;
+            z-index: -1;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <img  class='a' src="https://wallpaperaccess.com/full/1143632.jpg" alt="">
+
+    <img class='b' src="https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=612x612&w=0&k=20&c=kt8-RRzCDunpxgKFMBBjZ6jSteetNhhSxHZFvHQ0hNU=" alt="">
+
+    <img  class='c' src="https://www.marshallsindia.com/ImageBuckets/ItemImages/ZA%20205.jpg?id=75" alt="">
+
+</body>
+</html>
