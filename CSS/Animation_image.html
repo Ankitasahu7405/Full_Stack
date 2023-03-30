@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_Animation</title>
+    <style>
+        *
+        {
+            font-family: 'dancing script'cursive;
+        }
+        h1{
+            text-align: center;
+            color: crimson;
+            background-color: lightgoldenrodyellow;
+        }
+        .slider1{
+            width: 800px;
+            height: 500px;
+            margin: 5px auto;
+            animation: slider 12s ease-in-out 3s infinite;
+            background-size: cover;
+            background-image:url("./Images/image1.jpg")
+        }
+        @keyframes slider {
+            15%
+            {
+                background-image:url("./Images/image2.jpg")
+            }
+            30%
+            {
+                background-image:url("./Images/image3.jpg")
+            }
+            50%
+            {
+                background-image:url("./Images/image4.jpg")
+            }
+            60%
+            {
+                background-image:url("./Images/image6.jpg")
+            }
+            80%
+            {
+                background-image:url("./Images/image5.jpg")
+            }
+            100%
+            {
+                background-image: url("Images/image7.jpg");
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>~ IMAGES ANIMATION ~</h1>
+
+    <div class="slider1">
+        
+    </div>
+</body>
+</html>
