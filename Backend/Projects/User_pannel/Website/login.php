@@ -1,3 +1,12 @@
+<?php
+if(isset($_SESSION['user']))
+{
+	echo "<script>
+	window.location='index';
+	</script>";
+}
+include_once('header.php');
+?>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -19,11 +28,6 @@ Author URL: http://w3layouts.com
 </head>
 
 <body>
-  <!--header-->
-  <?php
-  include_once('header.php');
-  ?>
-  <!-- //header -->
   <!-- about breadcrumb -->
   <section class="w3l-about-breadcrumb text-left">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
@@ -43,19 +47,18 @@ Author URL: http://w3layouts.com
       
       <h3 class="hny-title mb-lg-5 mb-4">Login</h3>
         <div class="contacts12-main mb-5">
-            <form action="/action_page.php">
+            <form action="" method="post">
 				<div class="mb-3 mt-3">
-					<label for="email" class="form-label">Email:</label>
-					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+					<label for="Email" class="form-label">Email:</label>
+					<input type="Email" class="form-control" placeholder="Enter email" name="Email">
 				</div>
 				<div class="mb-3">
-					<label for="pwd" class="form-label">Password:</label>
-					<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+					<label for="Password" class="form-label">Password:</label>
+					<input type="Password" class="form-control" placeholder="Enter password" name="Password">
 				</div>
-				<div class="form-check mb-3">
-					<label class="form-check-label"></label>
-				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
+				
+				<button type="submit" class="btn btn-primary" name="submit">Login</button>
+				<a class="float-right" href="signup">If you not Register then click Sign up</a>
 			</form>
         </div>
     </div>
@@ -112,5 +115,4 @@ Author URL: http://w3layouts.com
   <script src="assets/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>

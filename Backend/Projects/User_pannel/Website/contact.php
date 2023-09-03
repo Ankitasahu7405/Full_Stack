@@ -43,24 +43,24 @@ Author URL: http://w3layouts.com
       
       <h3 class="hny-title mb-lg-5 mb-4">Get in touch</h3>
         <div class="contacts12-main mb-5">
-            <form action="https://sendmail.w3layouts.com/submitForm" method="post">
+            <form action="" method="post">
                 <div class="main-input">
                     <div class="d-grid">
-                        <input type="text" name="w3lName" id="w3lName" placeholder="Your Name" class="contact-input" />
-                        <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Phone Number"
+                        <input type="text" name="Name" id="Name" placeholder="Your Name" class="contact-input" />
+                        <input type="text" name="Phone_Number" id="Phone_Number" placeholder="Phone Number"
                             class="contact-input" />
                     </div>
                     <div class="d-grid">
-                        <input type="email" name="w3lSender" id="w3lSender" placeholder="Your Email id"
+                        <input type="email" name="Email" id="Email" placeholder="Your Email id"
                             class="contact-input" required />
-                        <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Subject"
+                        <input type="text" name="Subject" id="Subject" placeholder="Subject"
                             class="contact-input" />
                     </div>
                 </div>
-                <textarea class="contact-textarea" name="w3lMessage" id="w3lMessage"
+                <textarea class="contact-textarea" name="Message" id="Message"
                     placeholder="Type your message here" required></textarea>
                 <div class="text-right">
-                    <button class="btn btn-style btn-primary btn-contact">Submit Now</button>
+                    <button type="submit" name="submit" class="btn btn-style btn-primary btn-contact">Submit Now</button>
                 </div>
             </form>
         </div>
