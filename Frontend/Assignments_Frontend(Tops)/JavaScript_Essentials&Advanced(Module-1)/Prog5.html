@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Expression</title>
+</head>
+<body>
+    <script>
+        function checkAge(age) 
+		{
+			if (age > 18) 
+			{
+				return true;
+			} 
+			else 
+			{
+				var confirmation = confirm('Did parents allow you?');
+				return confirmation;
+			}
+		}
+
+		var userAge = prompt('Please enter your age:');
+		var result = checkAge(userAge);
+
+		if (result) 
+		{
+			alert('You are allowed!');
+		} 
+		else 
+		{
+			alert('You are not allowed!');
+		}
+
+    </script>
+</body>
+</html>
