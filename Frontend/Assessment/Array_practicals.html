@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+       function arrayToCountObject(arr) {
+		// Create an empty object to store counts
+		const countObject = {};
+
+		// Iterate through the array
+		arr.forEach(function (num) {
+		// If the value is not a key in countObject, create a new key
+		if (!countObject[num]) {
+			countObject[num] = 1;
+		} 
+		else {
+			// If the value is already a key, increment its count
+			countObject[num]++;
+		}
+		});
+
+		return countObject;
+		}
+
+		// Example usage:
+		const numbers = [1, 2, 3, 4, 2, 3, 1, 2, 4, 5];
+		const result = arrayToCountObject(numbers);
+		console.log(result);  
+    </script>
+    
+</body>
+</html>
+
+
+
+
