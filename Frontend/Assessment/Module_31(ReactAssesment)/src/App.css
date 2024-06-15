@@ -1,0 +1,32 @@
+.App {
+    text-align: center;
+  }
+  
+  .light {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark {
+    background-color: black;
+    color: white;
+  }
+  
+  .login-page {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  
+  .login-page.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .login-page.dark {
+    background-color: black;
+    color: white;
+  }
+  
